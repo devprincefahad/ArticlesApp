@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.EditProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/crossEditProfile"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/close"/>
+
+            <TextView
+                android:id="@+id/tvYourProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/crossEditProfile"
+                android:text="@string/edt_profile"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/btnUpdateProfile"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:src="@drawable/check"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            android:layout_below="@id/ll1"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/pink">
+
+            <RelativeLayout
+                android:id="@+id/imgrl"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imageViewProfileFP"
+                    android:layout_width="@dimen/_140sdp"
+                    android:layout_height="@dimen/_140sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/avatar" />
+
+                <!--                        <de.hdodenhof.circleimageview.CircleImageView-->
+                <!--                            android:layout_width="30dp"-->
+                <!--                            android:layout_height="30dp"-->
+                <!--                            android:layout_alignParentEnd="true"-->
+                <!--                            android:layout_alignParentBottom="true"-->
+                <!--                            android:layout_margin="@dimen/_5sdp"-->
+                <!--                            android:src="@drawable/add"-->
+                <!--                            app:civ_circle_background_color="#00ACFF" />-->
+
+
+                <ProgressBar
+                    android:id="@+id/progressProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:indeterminateTint="@color/pink"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgrl"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvChangeImageEp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@drawable/custom_input"
+                    android:padding="@dimen/_6sdp"
+                    android:text="@string/change_image"
+                    android:textColor="#00ACFF"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvRemoveImageEp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@drawable/custom_input"
+                    android:padding="@dimen/_6sdp"
+                    android:text="@string/remove_image"
+                    android:textColor="#E10C0C"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!--        <EditText-->
+        <!--            android:id="@+id/edtUsernameEditProfile"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="60dp"-->
+        <!--            android:layout_below="@id/rl"-->
+        <!--            android:layout_marginStart="@dimen/_16sdp"-->
+        <!--            android:layout_marginTop="30dp"-->
+        <!--            android:layout_marginEnd="@dimen/_16sdp"-->
+        <!--            android:background="@drawable/custom_input"-->
+        <!--            android:drawableStart="@drawable/username"-->
+        <!--            android:drawablePadding="12dp"-->
+        <!--            android:ems="10"-->
+        <!--            android:hint="@string/user_name"-->
+        <!--            android:inputType="text"-->
+        <!--            android:paddingStart="12dp"-->
+        <!--            android:paddingEnd="12dp"-->
+        <!--            android:textColor="#757272"-->
+        <!--            android:textColorHint="#757272"-->
+        <!--            android:textSize="14sp" />-->
+
+        <!--        <EditText-->
+        <!--            android:id="@+id/edtEmailEditProfile"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="60dp"-->
+        <!--            android:layout_below="@id/ll1"-->
+        <!--            android:layout_marginStart="@dimen/_16sdp"-->
+        <!--            android:layout_marginTop="15dp"-->
+        <!--            android:layout_marginEnd="@dimen/_16sdp"-->
+        <!--            android:background="@drawable/custom_input"-->
+        <!--            android:drawableStart="@drawable/email"-->
+        <!--            android:drawablePadding="12dp"-->
+        <!--            android:ems="10"-->
+        <!--            android:hint="@string/email"-->
+        <!--            android:inputType="textEmailAddress"-->
+        <!--            android:paddingStart="12dp"-->
+        <!--            android:paddingEnd="12dp"-->
+        <!--            android:textColor="#757272"-->
+        <!--            android:textColorHint="#757272"-->
+        <!--            android:textSize="14sp" />-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/tvMob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:gravity="center"
+                android:text="@string/change_mobile_number"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edtMobEditProfile"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/tvMob"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_40sdp"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/call"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="@string/mobile_number"
+                android:inputType="number"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="#757272"
+                android:textColorHint="#757272"
+                android:textSize="14sp" />
+
+<!--            <androidx.appcompat.widget.AppCompatButton-->
+<!--                android:id="@+id/btnUpdateProfile"-->
+<!--                android:layout_width="180dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_below="@id/edtMobEditProfile"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_marginBottom="@dimen/_40sdp"-->
+<!--                android:layout_marginTop="@dimen/_40sdp"-->
+<!--                android:background="@drawable/button_design"-->
+<!--                android:text="@string/update_profile"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="15sp" />-->
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

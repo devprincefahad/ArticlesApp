@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string name="app_name">ArticlesApp</string>
+    <string name="password_reset_instructions">
+        We just need your Email Id to send you password reset instructions.</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="language">Language</string>
+    <string name="edt_profile">Edit profile</string>
+    <string name="your_profile">Your Profile</string>
+    <string name="settings">User Settings</string>
+    <string name="user_details">User Details</string>
+    <string name="search_articles">Search Articles</string>
+    <string name="type_a_keyword_to_search">Type a keyword to search...</string>
+    <string name="your_daily_read">Your Daily Read</string>
+    <string name="article">Article</string>
+    <string name="logout_sure">Are you sure you want to Log-out?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="login_here">Login Here</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account">Dont have an Account?</string>
+    <string name="signup_now">SignUp Now</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_have_an_account">Already have an Account?</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="change_language">Change language</string>
+    <string name="note_profile_cannot_be_changed_once_created">*Note: Profile cannot be changed once created.</string>
+    <string name="choose_profile_picture_username_and_mobile_number">Choose profile picture,
+        username and mobile number.</string>
+    <string name="user_name">User name</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="setup_profile">Setup Profile</string>
+    <string name="change_password">Change Password</string>
+    <string name="change_mobile_number">To change your mobile number please provide us with your new mobile number below</string>
+    <string name="change_image">Change Image</string>
+    <string name="remove_image">Remove Image</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="please_enter_10_digit_number">Please enter 10 digit number</string>
+    <string name="mobile_num_updated">Mobile Number Updated</string>
+    <string name="something_went_wrong">Something went wrong!</string>
+
+</resources>

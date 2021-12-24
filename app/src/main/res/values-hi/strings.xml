@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string name="app_name">ArticlesApp</string>
+    <string name="password_reset_instructions">
+        हमें आपको पासवर्ड रीसेट निर्देश भेजने के लिए बस आपकी ईमेल आईडी चाहिए।</string>
+    <string name="hello_blank_fragment">हैलो खाली टुकड़ा।</string>
+    <string name="language">भाषा</string>
+    <string name="edt_profile">प्रोफ़ाइल संपादित करें</string>
+    <string name="your_profile">आपकी प्रोफ़ाइल</string>
+    <string name="settings">उपयोगकर्ता सेटिंग</string>
+    <string name="user_details">उपभोक्ता का विवरण</string>
+    <string name="search_articles">लेख खोजें</string>
+    <string name="type_a_keyword_to_search">सर्च करने के लिए एक कीवर्ड टाइप करें…</string>
+    <string name="your_daily_read">आपका दैनिक पाठ</string>
+    <string name="article">लेख</string>
+    <string name="logout_sure">क्या आप लॉग आउट करना चाहते हैं?</string>
+    <string name="yes">हाँ</string>
+    <string name="no">नहीं</string>
+    <string name="login_here">यहां लॉगिन करें</string>
+    <string name="email">ईमेल</string>
+    <string name="password">कुंजिका</string>
+    <string name="forgot_password">पासवर्ड भूल गए?</string>
+    <string name="login">लॉग इन</string>
+    <string name="don_t_have_an_account">क्या आपका खाता नहीं है?</string>
+    <string name="signup_now">अभी साइनअप करें!</string>
+    <string name="sign_up">साइन अप करें</string>
+    <string name="already_have_an_account">क्या आपके पास पहले से एक खाता मौजूद है?</string>
+    <string name="reset_password">पासवर्ड रीसेट</string>
+    <string name="change_language">भाषा बदलें</string>
+    <string name="note_profile_cannot_be_changed_once_created">* नोट: प्रोफाइल एक बार बनाने के बाद नहीं बदला जा सकता है।</string>
+    <string name="setup_profile">सेटअप प्रोफ़ाइल</string>
+    <string name="choose_profile_picture_username_and_mobile_number">प्रोफ़ाइल चित्र, उपयोगकर्ता नाम और मोबाइल नंबर चुनें।</string>
+    <string name="user_name">उपयोगकर्ता नाम</string>
+    <string name="mobile_number">मोबाइल नंबर</string>
+    <string name="change_password">पासवर्ड बदलें</string>
+    <string name="change_mobile_number">अपना मोबाइल नंबर बदलने के लिए कृपया हमें अपना नया मोबाइल नंबर नीचे प्रदान करें।</string>
+    <string name="change_image">चित्र को बदलें</string>
+    <string name="remove_image">छवि निकालें</string>
+    <string name="update_profile">प्रोफ़ाइल अपडेट करें</string>
+    <string name="please_enter_10_digit_number">कृपया 10 अंकों की संख्या दर्ज करें</string>
+    <string name="mobile_num_updated">मोबाइल नंबर अपडेट किया गया</string>
+    <string name="something_went_wrong">कुछ गलत हो गया!</string>
+    
+
+</resources>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".Activities.SetupProfileActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:text="@string/setup_profile"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <RelativeLayout
+        android:layout_width="155dp"
+        android:layout_height="155dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView"
+            android:layout_width="155dp"
+            android:layout_height="155dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/avatar" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/_5sdp"
+            android:src="@drawable/add"
+            app:civ_circle_background_color="#00ACFF" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:text="@string/choose_profile_picture_username_and_mobile_number"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/edtNameSetProfile"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:background="@drawable/custom_input"
+        android:drawableLeft="@drawable/username"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="@string/user_name"
+        android:inputType="textPersonName"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="#757272"
+        android:textColorHint="#757272"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/edtMobNoSetProfile"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:background="@drawable/custom_input"
+        android:drawableLeft="@drawable/call"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="@string/mobile_number"
+        android:inputType="number"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="#757272"
+        android:textColorHint="#757272"
+        android:textSize="14sp" />
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="@dimen/_16sdp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:text="@string/note_profile_cannot_be_changed_once_created"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="12dp" />-->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSetupProfile"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@drawable/button_design"
+        android:text="@string/setup_profile"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+</LinearLayout>

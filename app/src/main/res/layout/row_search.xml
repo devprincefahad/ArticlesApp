@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardViewSearch"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_100sdp"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="1dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/articleHeadlineSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="@dimen/_100sdp"
+            android:text="Article Headline"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/articleDataSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/articleHeadlineSearch"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Article Content"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/articleImageSearch"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/image_frame"
+            android:backgroundTint="@color/black"
+            android:cropToPadding="true"
+            android:scaleType="fitCenter"
+            android:src="@color/black" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
+
+    <!--<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    android:id="@+id/cardViewSearch"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="200dp"-->
+    <!--    android:layout_margin="5dp"-->
+    <!--    app:cardCornerRadius="2dp"-->
+    <!--    app:cardElevation="2dp">-->
+
+    <!--    <RelativeLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent">-->
+
+    <!--        <RelativeLayout-->
+    <!--            android:id="@+id/rl"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent">-->
+
+    <!--            <ImageView-->
+    <!--                android:id="@+id/articleImageSearch"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:scaleType="center"-->
+    <!--                android:src="@drawable/treerv" />-->
+
+    <!--            <RelativeLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:background="#50000000"-->
+    <!--                android:gravity="center">-->
+
+    <!--            </RelativeLayout>-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/articleHeadlineSearch"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_alignParentBottom="true"-->
+    <!--                android:layout_marginStart="15dp"-->
+    <!--                android:layout_marginEnd="15dp"-->
+    <!--                android:layout_marginBottom="5dp"-->
+    <!--                android:text="This is a sample headline"-->
+    <!--                android:textColor="@color/white"-->
+    <!--                android:textSize="18sp"-->
+    <!--                android:textStyle="bold" />-->
+
+    <!--        </RelativeLayout>-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/articleDataSearch"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_below="@+id/rl"-->
+    <!--            android:layout_marginStart="10dp"-->
+    <!--            android:layout_marginTop="5dp"-->
+    <!--            android:layout_marginEnd="15dp"-->
+    <!--            android:layout_marginBottom="10dp"-->
+    <!--            android:text="This is a sample article text"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="12sp"-->
+    <!--            android:visibility="gone" />-->
+
+
+    <!--        &lt;!&ndash;        <com.borjabravo.readmoretextview.ReadMoreTextView&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:id="@+id/articleData"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_below="@+id/rl"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_marginStart="10dp"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_marginTop="5dp"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_marginEnd="15dp"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_marginBottom="10dp"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:text="This is a sample article text"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:textColor="@color/black"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:textSize="12sp"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            app:colorClickableText="@color/purple_200"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            app:trimExpandedText="Show More."&ndash;&gt;-->
+    <!--        &lt;!&ndash;            app:trimLength="100"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            app:trimMode="trimModeLength" />&ndash;&gt;-->
+
+    <!--        &lt;!&ndash;        <TextView&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:id="@+id/articleHeadline"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_marginStart="10dp"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_marginTop="10dp"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:text="This is a sample headline"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:textColor="@color/black"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:textSize="18sp" />&ndash;&gt;-->
+
+    <!--        &lt;!&ndash;        <TextView&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:id="@+id/articleData"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_below="@+id/articleHeadline"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_marginStart="10dp"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_marginTop="5dp"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:text="This is a sample article text"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:textColor="@color/black"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:textSize="12sp" />&ndash;&gt;-->
+
+    <!--        &lt;!&ndash;        <ImageView&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:id="@+id/articleImage"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_width="90dp"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_height="90dp"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_alignParentEnd="true"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_margin="10dp"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:src="@color/gray2" />&ndash;&gt;-->
+
+    <!--    </RelativeLayout>-->
+
+
+    <!--</androidx.cardview.widget.CardView>-->
