@@ -1,6 +1,5 @@
 package com.example.articlesapp.Activities;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 
@@ -57,8 +56,6 @@ public class SplashActivity extends AppCompatActivity {
 
         }
 
-
-
     }
 
     private void isProfileSetupComplete(FirebaseAuth firebaseAuth) {
@@ -67,7 +64,7 @@ public class SplashActivity extends AppCompatActivity {
         if (firebaseAuth.getCurrentUser() != null) {
             userRef.child(uid).addValueEventListener(new ValueEventListener() {
                 @Override
-                public void onDataChange(@NonNull DataSnapshot snapshot) {
+                public void onDataChange(DataSnapshot snapshot) {
                     // check phone is null or not
                     String phone = snapshot.child("mobileNumber").getValue(String.class);
                     if (phone != null) {
@@ -95,7 +92,7 @@ public class SplashActivity extends AppCompatActivity {
                 }
 
                 @Override
-                public void onCancelled(@NonNull DatabaseError error) {
+                public void onCancelled(DatabaseError error) {
 
                 }
             });
