@@ -70,7 +70,6 @@ public class MainActivity extends AppCompatActivity {
                 .replace(R.id.fragmentContainer, new HomeFragment())
                 .commit();
     }
-
     private void bottomMenu() {
         chipNavigationBar.setOnItemSelectedListener(new ChipNavigationBar.OnItemSelectedListener() {
 
@@ -79,22 +78,20 @@ public class MainActivity extends AppCompatActivity {
 
                 Fragment fragment = null;
 
-                switch (i) {
-                    case R.id.home:
-                        fragment = new HomeFragment();
-                        break;
-                    case R.id.search:
-                        fragment = new SearchFragment();
-                        break;
-                    case R.id.user:
-                        fragment = new ProfileFragment();
-                        break;
+                if (i == R.id.home) {
+                    fragment = new HomeFragment();
+                } else if (i == R.id.search) {
+                    fragment = new SearchFragment();
+                } else if (i == R.id.user) {
+                    fragment = new ProfileFragment();
                 }
 
-                getSupportFragmentManager()
-                        .beginTransaction()
-                        .replace(R.id.fragmentContainer, fragment)
-                        .commit();
+                if (fragment != null) {
+                    getSupportFragmentManager()
+                            .beginTransaction()
+                            .replace(R.id.fragmentContainer, fragment)
+                            .commit();
+                }
             }
         });
     }
